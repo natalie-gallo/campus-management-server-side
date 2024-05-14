@@ -15,6 +15,21 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+
+  email: {
+    type: Sequelize.STRING, // Email will be updated in routing
+    allowNull: false
+  },
+
+  imageUrl: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+
+  gpa: {
+    type: Sequelize.INTEGER,
+    allowNull: true
   }
 });
 
