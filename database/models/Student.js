@@ -28,10 +28,10 @@ const Student = db.define("student", {
   },
 
   gpa: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.DOUBLE,
     allowNull: true
   }
 });
 
-// Export the student model
+// Export the student model 
 module.exports = Student;
