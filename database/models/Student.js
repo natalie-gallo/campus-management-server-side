@@ -5,6 +5,7 @@ It defines the student model for the database.
 ==================================================*/
 const Sequelize = require('sequelize');  // Import Sequelize
 const db = require('../db');  // Import Sequelize database instance called "db"
+const { toDefaultValue } = require('sequelize/lib/utils');
 
 const Student = db.define("student", {
   firstname: {
@@ -29,7 +30,12 @@ const Student = db.define("student", {
 
   gpa: {
     type: Sequelize.DOUBLE,
-    allowNull: true
+    allowNull: true,
+    toDefaultValue: 0.0,
+    validate:{
+      min: 0.0,
+      max: 4.0
+    }
   }
 });
 
