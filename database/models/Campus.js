@@ -24,7 +24,7 @@ const Campus = db.define("campus", {
 
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: 'default_image_url.jpg',
+    defaultValue: 'default_campus_image_url.jpg',
   }
 });
 
