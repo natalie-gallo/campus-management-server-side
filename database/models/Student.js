@@ -25,7 +25,8 @@ const Student = db.define("student", {
 
   imageUrl: {
     type: Sequelize.STRING,
-    allowNull: true
+    allowNull: true,
+    defaultValue: 'https://i.pinimg.com/originals/6d/7f/16/6d7f164634919b5be31d6bc24ef83a0f.jpg'
   },
 
   gpa: {
