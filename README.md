@@ -2,6 +2,15 @@
 
 This repository is the server (back-end) starter code for Final Project - Full-Stack CRUD Application.
 
+## Team Members
+
+- Natalie Gallo (natalie-gallo)
+- Emily Klapper (emiklap)
+- Lina Tran (ltran7233)
+- Christopher Pawlus (ckrzysp)
+
+
+
 **Prerequisites**
 - Install PostgreSQL (Postgres) [[link](https://www.postgresql.org/download/)] - required to run the database
 - Install Postman [[link](https://www.postman.com/downloads/)] - optional tool for API testing 
